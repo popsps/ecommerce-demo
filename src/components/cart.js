@@ -11,7 +11,7 @@ const Cart = () => {
     return (
       <div className='text-center'>
         <h5>Your Cart</h5>
-        <PayPalButton/>
+        {/*<PayPalButton/>*/}
       </div>
     )
   } else
