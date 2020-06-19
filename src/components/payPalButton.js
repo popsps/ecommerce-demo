@@ -1,7 +1,11 @@
 import React from 'react';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
 
+<<<<<<< HEAD
+class PayPalButton extends React.Component {
+=======
 export default class PayPalButton extends React.Component {
+>>>>>>> origin/master
   render() {
     const onSuccess = (payment) => {
       // Congratulation, it came here means everything's fine!
@@ -31,7 +35,11 @@ export default class PayPalButton extends React.Component {
 
     const client = {
       // client ID
+<<<<<<< HEAD
+      sandbox: process.env.REACT_APP_APP_ID || process.env.PayPal_ID,
+=======
       sandbox: process.env.PayPal_ID,
+>>>>>>> origin/master
       production: 'YOUR-PRODUCTION-APP-ID',
     }
     // In order to get production's app-ID, you will have to send your app to Paypal for approval first
@@ -46,4 +54,10 @@ export default class PayPalButton extends React.Component {
                         onSuccess={onSuccess} onCancel={onCancel}/>
     );
   }
+<<<<<<< HEAD
 }
+
+export default PayPalButton
+=======
+}
+>>>>>>> origin/master
