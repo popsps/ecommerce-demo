@@ -31,7 +31,7 @@ class PayPalButton extends React.Component {
 
     const client = {
       // client ID
-      sandbox: process.env.REACT_APP_APP_ID,
+      sandbox: process.env.REACT_APP_APP_ID || process.env.PAYPAL_ID,
       production: 'YOUR-PRODUCTION-APP-ID',
     }
     // In order to get production's app-ID, you will have to send your app to Paypal for approval first
